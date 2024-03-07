@@ -1,0 +1,80 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.movie-item {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.movie-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.movie-details {
+    flex: 1;
+}
+
+.movie-title {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.movie-overview {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.movie-release-date, .movie-rating {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}

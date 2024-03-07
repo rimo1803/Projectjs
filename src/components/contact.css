@@ -8,7 +8,7 @@
   flex-direction: column; /* Arrange les éléments en colonne */
   gap: 20px; /* Ajoute un espacement entre les éléments enfants */
   justify-content: center; /* Centre les éléments horizontalement */
-  /* Ajoute une bordure de 1 pixel solide */
+  
   border-radius: 10px; /* Coins arrondis */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
   /* Couleur de fond */
@@ -33,9 +33,8 @@
   background-color: #990000;
   color: white;
 }
-body{
-  background-image: url(.//ImagesAbout/squid-game-067-marbles-line-up-9fuwanyml41ff5l7.jpg)
-}
+
+
 
 .contact-info {
   margin-bottom: 10px; /* Espacement en bas de la section */

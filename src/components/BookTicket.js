@@ -20,9 +20,7 @@ const BookTicket2 = () => {
                 <Typography gutterBottom variant="h4" component="div" color="darkblue" mt={2}>
                     MOVIE - {moviedetails.name}
                 </Typography>
-                <Typography gutterBottom variant="h6" component="div" color="#6f0b96" mt={2}>
-                    Starring - {moviedetails.starring}
-                </Typography>
+              
                 <TableContainer>
                     <Table style={{ width: 10 }} color="primary">
                         <TableHead >
@@ -189,7 +187,7 @@ const BookTicket2 = () => {
             <Divider />
             <Box textAlign='center' mt={1} >
                 <Typography gutterBottom variant="p" component="div" color="#f23a07" mt={2} >
-                    MOVIE SCREEN - ALL EYES THIS WAY PLEASE!!
+                   
 
                 </Typography>
 
@@ -199,7 +197,7 @@ const BookTicket2 = () => {
                 <Button
                     sx={{
                         color: 'white', backgroundColor: 'black', width: 300, ':hover': {
-                            bgcolor: '#f207cb',
+                            bgcolor: 'red',
                             color: 'white',
                         }
                     }}

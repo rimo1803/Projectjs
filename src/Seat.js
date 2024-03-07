@@ -22,7 +22,7 @@ export const seatData = [
         "seat18": "A18",
         "seat19": "A19",
         "seat20": "A20",
-        "price": "300"
+        "price": "50"
     },
     {
         "id": 2,
@@ -47,7 +47,7 @@ export const seatData = [
         "seat18": "B18",
         "seat19": "B19",
         "seat20": "B20",
-        "price": "150"
+        "price": "40"
     },
     {
         "id": 3,
@@ -72,7 +72,7 @@ export const seatData = [
         "seat18": "C18",
         "seat19": "C19",
         "seat20": "C20",
-        "price": "150"
+        "price": "20"
     },
     {
         "id": 4,
@@ -97,7 +97,7 @@ export const seatData = [
         "seat18": "D18",
         "seat19": "D19",
         "seat20": "D20",
-        "price": "150"
+        "price": "20"
     },
     {
         "id": 5,
@@ -122,7 +122,7 @@ export const seatData = [
         "seat18": "E18",
         "seat19": "E19",
         "seat20": "E20",
-        "price": "150"
+        "price": "20"
     },
     {
         "id": 6,
@@ -147,7 +147,7 @@ export const seatData = [
         "seat18": "F18",
         "seat19": "F19",
         "seat20": "F20",
-        "price": "150"
+        "price": "20"
     },
     {
         "id": 7,
@@ -172,7 +172,7 @@ export const seatData = [
         "seat18": "G18",
         "seat19": "G19",
         "seat20": "G20",
-        "price": "150"
+        "price": "20"
     },
 
 

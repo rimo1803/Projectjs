@@ -1,9 +1,9 @@
 import React from 'react';
 import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
-import { Movies } from '../Movies'; 
+import SearchBar from './SearchBar'; 
 
-const Navbar = () => {
+const Navbar = ({ onSearch }) => {
     return (
         <>
             <AppBar position="static" style={{ backgroundColor: '#990000' }}>
@@ -11,12 +11,15 @@ const Navbar = () => {
                     <Typography variant='h6' component='h6' sx={{ flexGrow: 1, fontWeight: 'bold' }}>
                         GrateCinema
                     </Typography>
+                    
                     <Stack direction='row'>
-                        <Button color='inherit' component={Link} to="/">Home</Button>
+                        <Button color='inherit' component={Link} to="/">Acceuil</Button>
+                        <Button color='inherit' component={Link} to="/booking">Booking</Button>
                         <Button color='inherit' component={Link} to="/search">Recherche</Button>
                         <Button color='inherit' component={Link} to="/about">About</Button>
                         <Button color='inherit' component={Link} to="/contact-info">Contact</Button>
                     </Stack>
+                    
                 </Toolbar>
             </AppBar>
         </>

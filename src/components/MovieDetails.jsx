@@ -1,8 +1,8 @@
 import './MovieDetails.css';
-
+import Movies from '../Movies';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Movies } from '../Movies';
+
 
 const MovieDetails = () => {
     const { id } = useParams();
