@@ -1,0 +1,39 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #343434;
+  margin-left: 0.5rem;
+}
+
+.list-container {
+  padding: 0.5rem 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+  background-color: #ffffff;
+  margin: 0;
+  accent-color: green;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid rgb(58, 5, 93);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+
+.checkbox:checked:before {
+  background-color: green;
+}
+
+.row {
+  display: flex;
+}
