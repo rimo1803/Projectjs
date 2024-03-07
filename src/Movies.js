@@ -9,7 +9,7 @@ export const Movies = [
         "id": 2,
         "name": "Kurulus Osman",
         "starring": "Burak Çelik  ,Özge Törer",
-        "image": URL("../ImageAbout/image1"),
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Jailer_2023_Tamil_film_poster.jg"
     },
     {
         "id": 3,
