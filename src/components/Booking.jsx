@@ -34,25 +34,30 @@ const Booking = () => {
 
     return (
         <Container>
-            <Grid container spacing={3} mt={2}>
+            <Typography variant="h5" sx={{ textAlign: 'center', color: 'white', marginBottom: '20px' }}>
+                Buy Tickets for Popular Movies
+            </Typography>
+            <Grid container spacing={3}>
                 {movies.map((movie) => (
-                    <Grid item lg={4} xs={12} key={movie.id}>
-                        <Card sx={{ width: 300 }}>
+                    <Grid item lg={4} md={6} xs={12} key={movie.id}>
+                        <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: 'black', color: 'white', border: '2px solid #990000' }}>
                             <CardMedia
-                                sx={{ height: 400 }}
+                                component="img"
+                                height="400"
                                 image={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                                title={movie.title}
+                                alt={movie.title}
+                                sx={{ objectFit: 'cover' }}
                             />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
+                            <CardContent sx={{ flexGrow: 1 }}>
+                                <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: 'center' }}>
                                     {movie.title}
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary">
+                                <Typography variant="body2" color="textSecondary" sx={{ textAlign: 'center', color: 'white' }}>
                                     {movie.release_date}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
-                                <Button onClick={() => handleData(movie)} color="primary">
+                            <CardActions sx={{ justifyContent: 'center' }}>
+                                <Button onClick={() => handleData(movie)} variant="contained" sx={{ backgroundColor: '#990000', color: '#fff', '&:hover': { backgroundColor: 'black' } }}>
                                     BOOK TICKET
                                 </Button>
                             </CardActions>

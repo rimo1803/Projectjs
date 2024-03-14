@@ -1,15 +1,18 @@
 import React from 'react';
 import { Typography, TextField, Button, Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/system';
+import { useNavigate } from 'react-router-dom';
 
 const FormContainer = styled(Box)({
     maxWidth: 500,
     margin: 'auto',
     padding: '20px',
-    backgroundColor: '#f9f9f9',
-    borderRadius: '5px',
+    backgroundColor: '#fff',
+    borderRadius: '10px',
+    boxShadow: '0 2px 4px rgba(255, 0, 0, 0.5)', // Red shadow
+    marginTop: '80px', // Espace au-dessus du formulaire
 });
+
 
 const PersonalInfoForm = ({ onSubmit }) => {
     const navigate = useNavigate();
@@ -22,14 +25,52 @@ const PersonalInfoForm = ({ onSubmit }) => {
 
     return (
         <FormContainer>
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h5" gutterBottom >
                 Enter Your Information
             </Typography>
-            <form onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column' }}>
-                <TextField name="name" label="Full Name" required fullWidth sx={{ marginBottom: '10px' }} />
-                <TextField name="email" label="Email" type="email" required fullWidth sx={{ marginBottom: '10px' }} />
-                <TextField name="cardNumber" label="Card Number" type="text" required fullWidth sx={{ marginBottom: '10px' }} />
-                <Button type="submit" variant="contained" color="primary" sx={{ textTransform: 'none', marginTop: '10px', width: '100%' }}>Submit</Button>
+            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
+            <TextField
+    name="name"
+    label="Full Name"
+    required
+    fullWidth
+    sx={{
+        marginBottom: '20px',
+        '& .Mui-focused': {
+            borderColor: 'red', // Couleur de la bordure en rouge lorsqu'en focus
+        },
+    }}
+/>
+<TextField
+    name="email"
+    label="Email"
+    type="email"
+    required
+    fullWidth
+    sx={{
+        marginBottom: '20px',
+        '& .Mui-focused': {
+            borderColor: 'red',
+        },
+    }}
+/>
+<TextField
+    name="cardNumber"
+    label="Card Number"
+    type="text"
+    required
+    fullWidth
+    sx={{
+        marginBottom: '20px',
+        '& .Mui-focused': {
+            borderColor: 'red',
+        },
+    }}
+/>
+
+                <Button type="submit" variant="contained" style={{ textTransform: 'none', marginTop: '20px', backgroundColor: '#990000', color: '#fff', '&:hover': { backgroundColor: '#660000' } }}>
+                    Submit
+                </Button>
             </form>
         </FormContainer>
     );

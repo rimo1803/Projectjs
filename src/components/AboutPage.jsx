@@ -9,7 +9,7 @@ const AboutPage = () => {
     return (
         <div className="about-container">
             <div className="about-content">
-                <h1 className="about-title">GrateCinema</h1>
+                <h1 className="about-title">MoviesLand</h1>
                 <p className="about-description">Grate Cinema is your online destination for a hassle-free moviegoing experience. Discover the latest films showing, check showtimes and reserve your seats, all in just a few clicks. With a user-friendly interface and intuitive features, Grate Cinema lets you plan your movie trip with ease. Never miss a blockbuster and enjoy a smooth and pleasant booking experience. Welcome to the world of Grate Cinema, where cinema becomes an experience like no other.</p>
                 <div className="about-images">
                 <img src={Image1} alt="Image 1" className="about-image" />

@@ -1,10 +1,13 @@
+// Movies.js
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import tmdbAPI from './components/services/tmdbAPI';
 import { TextField, Button, Typography } from '@mui/material';
 import SearchBar from './components/SearchBar';
-
+import DetailAcceuil from './components/DetailAcceuil';
 function Movies() {
     const [movies, setMovies] = useState([]);
+    const history = useHistory();
 
     const fetchMovies = async (searchQuery) => {
         try {
@@ -25,6 +28,10 @@ function Movies() {
         }
     };
 
+    const handleMovieClick = (id) => {
+        history.push(`/movie/${id}`);
+    };
+
     return (
         <div>
             <Typography variant="h4" gutterBottom>
@@ -33,7 +40,7 @@ function Movies() {
             <SearchBar onSearch={handleSearch} />
             <ul>
                 {movies.map((movie) => (
-                    <li key={movie.id}>{movie.title}</li>
+                    <li key={movie.id} onClick={() => handleMovieClick(movie.id)}>{movie.title}</li>
                 ))}
             </ul>
         </div>

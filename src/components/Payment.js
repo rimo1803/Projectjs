@@ -48,7 +48,7 @@ const Payment = () => {
                     <Grid item xs={3}>
                         <Card sx={{ width: 400 }} alignItems="center" justify="center" backgroundColor="black">
                             <CardContent>
-                                <Typography variant="h4" component="div" style={{ color: '#1a0699' }} gutterBottom>
+                                <Typography variant="h4" component="div" style={{ color: '#990000' }} gutterBottom>
                                     BOOKING SUMMARY
                                 </Typography>
                                 <Typography variant="h5" component="h5" style={{ color: '#7a0896' }}>
@@ -85,8 +85,8 @@ const Payment = () => {
                                 <Box textAlign='center' mt={3}>
                                     <Button onClick={() => handleSubmit()}
                                         sx={{
-                                            color: 'white', backgroundColor: 'black', width: 300, ':hover': {
-                                                bgcolor: 'red',
+                                            color: 'white', backgroundColor: '#990000', width: 300, ':hover': {
+                                                bgcolor: 'black',
                                                 color: 'white',
                                             }
                                         }}

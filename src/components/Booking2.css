@@ -46,15 +46,16 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #990000;
+    background-color: #ff5252; /* Couleur rouge vif */
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     border: none;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px; /* Coins arrondis */
     transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card-button:hover {
-    background-color: #660000;
+    background-color: #ff1744; /* Couleur rouge plus foncée au survol */
 }

@@ -17,10 +17,10 @@ const BookTicket2 = () => {
     return (
         <>
             <Container>
-                <Typography gutterBottom variant="h4" component="div" color="darkblue" mt={2}>
-                    MOVIE - {moviedetails.name}
-                </Typography>
-              
+            <Typography gutterBottom variant="h4" component="div" color="#990000" mt={2}>
+    MOVIE : {moviedetails.title}
+</Typography>
+
                 <TableContainer>
                     <Table style={{ width: 10 }} color="primary">
                         <TableHead >
@@ -196,8 +196,8 @@ const BookTicket2 = () => {
             <Box textAlign='center' mt={3} onClick={() => paymentPage()}>
                 <Button
                     sx={{
-                        color: 'white', backgroundColor: 'black', width: 300, ':hover': {
-                            bgcolor: 'red',
+                        color: 'white', backgroundColor: '#990000', width: 300, ':hover': {
+                            bgcolor: 'black',
                             color: 'white',
                         }
                     }}
